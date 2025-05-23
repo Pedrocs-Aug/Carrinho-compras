@@ -28,9 +28,8 @@ function adicionar(){
 }
 
 function limpar(){
-  
-sectionListaProdutos = document.getElementById('lista-produtos').innerHTML = '<section class="carrinho__produtos__produto"><span class="texto-azul"></span><span class="texto-azul"></span></section>';
-spanValorTotal = document.getElementById('valor-total').innerHTML = 'R$';
-valorTotal = 0
-inputQuantidade = document.getElementById('quantidade').value = '';
+  document.getElementById('lista-produtos').innerHTML = ''; // Limpa o conteúdo
+  document.getElementById('valor-total').innerHTML = 'R$0'; // Define o valor total inicial para R$0
+  valorTotal = 0; // Zera a variável de controle
+  document.getElementById('quantidade').value = '1'; // Reseta a quantidade para um valor padrão, por exemplo, 1
 }
